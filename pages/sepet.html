@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sepetim | Atak Men's </title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo"> Atak Men's </div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Ana Sayfa</a></li>
+                <li><a href="urunler.html">Ürünler</a></li>
+                <li><a href="sepet.html">Sepet</a></li>
+                <li><a href="iletisim.html">İletişim</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="cart-container">
+        <h1 class="page-title">Alışveriş Sepetiniz</h1>
+        
+        <!-- JavaScript ile ürünlerin dinamik olarak ekleneceği boş alan -->
+        <div class="cart-items" id="sepet-icerigi">
+            <p style="text-align: center; color: #666;">Sepetiniz şu an boş.</p>
+        </div>
+
+        <!-- Sepet Özeti (Fiyatlar Sıfırlandı) -->
+        <div class="cart-summary">
+            <h3>Sipariş Özeti</h3>
+            <p id="ara-toplam">Ara Toplam: ₺0</p>
+            <p>Kargo: Ücretsiz</p>
+            <h2 class="total-price" id="genel-toplam">Genel Toplam: ₺0</h2>
+            <button class="btn checkout-btn" onclick="alisverisiTamamla()">Alışverişi Tamamla</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Atak Men's. Tüm hakları saklıdır.</p>
+    </footer>
+
+    <script src="../scripts/myscript.js"></script>
+</body>
+</html>
